@@ -738,5 +738,29 @@ body {
 }
 
 .team {
+  padding: 20px 0 40px;
+  text-align: center;
+}
 
+.team__image {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.team__title {
+  color: $text-color;
+  margin-bottom: 23px;
+}
+
+.team__text {
+  margin-bottom: 84px;
+}
+
+.team__button {
+  border: none;
+  background-color: $accent;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 21px 26px;
+  color: $bg-color;
 }
