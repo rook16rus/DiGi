@@ -22,6 +22,7 @@ ul, li {
 
 button {
   padding: 0;
+  cursor: pointer;
 }
 
 p {
@@ -273,14 +274,90 @@ body {
   right: 0;
   z-index: 5;
   cursor: pointer;
+
+  @media (min-width: 1440px) {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 .slick-prev {
   background-color: $accent;
   top: calc(50% - 56px);
+
+  @media (min-width: 1440px) {
+    top: calc(50% - 70px);
+  }
 }
 
 .slick-next {
   background-color: $bg-color;
   bottom: calc(50% - 56px);
+
+  @media (min-width: 1440px) {
+    bottom: calc(50% - 70px);
+  }
+}
+
+.call {
+  background-color: $accent;
+  padding: 40px 0;
+  color: #fff;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
+}
+
+.call__inner {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 0 80px;
+  }
+}
+
+.call__box {
+  @media (min-width: 768px) {
+    max-width: 427px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 695px;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 796px;
+  }
+}
+
+.call__title {
+  @extend %roboto-500;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+.call__text {
+  @extend %dosis-300;
+  margin-bottom: 40px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+
+.call__button {
+  padding: 16px 15px;
+  background-color: $bg-color;
+  color: $accent;
+  font-size: 18px;
+  @extend %roboto-500;
+  border-radius: 3px;
+  border: none;
 }
