@@ -20,6 +20,14 @@ ul, li {
   list-style: none;
 }
 
+button {
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
 body {
   min-width: 320px;
   overflow-x: hidden;
@@ -115,6 +123,14 @@ body {
     left: 0;
     right: 0;
 
+    @media (min-width: 640px) {
+      bottom: 50px;
+    }
+
+    @media (min-width: 1024px) {
+      bottom: 80px;
+    }
+
     button {
       font-size: 0;
       border: none;
@@ -138,6 +154,22 @@ body {
   color: #fff;
   text-align: center;
   min-height: 193px;
+
+  @media (min-width: 640px) {
+    min-height: 386px;
+  }
+
+  @media (min-width: 768px) {
+    min-height: 465px;
+  }
+
+  @media (min-width: 1024px) {
+    min-height: 618px;
+  }
+
+  @media (min-width: 1440px) {
+    min-height: 668px;
+  }
 }
 
 .top-slider__title {
@@ -151,6 +183,34 @@ body {
   margin: 0 auto;
   position: relative;
 
+  @media (min-width: 640px) {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 50px 0 15px;
+    margin-bottom: 30px;
+    max-width: 522px;
+  }
+
+  @media (min-width: 768px) {
+    padding: 87px 0 0;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 750px;
+    padding-top: 101px;
+    font-size: 84px;
+    line-height: 84px;
+    letter-spacing: 2px;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 865px;
+    padding-top: 107px;
+    font-size: 96px;
+    line-height: 96px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -161,5 +221,66 @@ body {
     width: 61px;
     margin: 0 auto;
     background-color: $text-color;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
   }
+}
+
+.top-slider__text {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    padding: 25px 0 32px;
+    font-family: 'Roboto Condensed', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    max-width: 587px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 886px;
+    font-size: 24px;
+    line-height: 26px;
+  }
+}
+
+.top-slider__button {
+  display: none;
+
+  @media (min-width: 640px) {
+    display: block;
+    margin: 0 auto 113px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: $accent;
+    color: $bg-color;
+    padding: 16px 45px;
+    border: none;
+    border-radius: 3px;
+  }
+}
+
+.slick-arrow {
+  width: 56px;
+  height: 56px;
+  border: none;
+  position: absolute;
+  right: 0;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.slick-prev {
+  background-color: $accent;
+  top: calc(50% - 56px);
+}
+
+.slick-next {
+  background-color: $bg-color;
+  bottom: calc(50% - 56px);
 }
