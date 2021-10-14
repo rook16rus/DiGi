@@ -5,6 +5,7 @@ import '../libs/slick/slick.min'
 import './images/next-arrow.svg'
 import './images/prev-arrow.svg'
 import $ from 'jquery';
+require("html-loader?interpolate!./index.html");
 
 $(function(){
     $('.top-slider').slick({
