@@ -65,6 +65,31 @@ body {
   }
 }
 
+.title {
+  @extend %robotocondensed-400;
+  font-size: 24px;
+  line-height: 28px;
+  position: relative;
+  padding-bottom: 28px;
+
+  @media (min-width: 640px) {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 8px;
+    background-color: $accent;
+    bottom: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+}
+
 .header {
   background-color: $accent;
 }
@@ -368,3 +393,98 @@ body {
   border: none;
 }
 
+.services {
+  padding: 25px 0 40px;
+  text-align: center;
+
+  @media (min-width: 640px) {
+    padding: 24px 0 99px;
+  }
+}
+
+.services__title {
+  margin-bottom: 47px;
+
+
+}
+
+.services__descr {
+  font-size: 20px;
+  line-height: 24px;
+  color: $text-color;
+
+
+}
+
+.services__text {
+  color: #797979;
+  font-size: 15px;
+  line-height: 17px;
+  margin-bottom: 40px;
+}
+
+.services__item {
+  min-height: 310px;
+  border: 1px solid $bg-color;
+  border-bottom: none;
+  padding: 0 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &:last-child {
+    border-bottom: 1px solid $bg-color;
+  }
+
+  &:hover {
+    .services__item-text {
+      display: block;
+    }
+
+    .services__item-link {
+      display: block;
+    }
+
+    .services__item-img {
+      margin-bottom: 14px;
+    }
+
+    .services__item-title {
+      margin-bottom: 30px;
+    }
+
+    .services__item-inner {
+      border: 4px solid $accent;
+      margin: 18px 0px;
+      padding: 5px 20px;
+      min-height: 277px;
+    }
+  }
+}
+
+.services__item-img {
+  margin-bottom: 30px;
+}
+
+.services__item-title {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2px;
+  color: $text-color;
+  text-transform: uppercase;
+  @extend %robotocondensed-bold;
+}
+
+.services__item-text {
+  display: none;
+  margin-bottom: 17px;
+  @extend %dosis-400;
+}
+
+.services__item-link {
+  display: none;
+  letter-spacing: 2px;
+  color: $accent;
+  text-transform: uppercase;
+  @extend %robotocondensed-bold;
+}

@@ -1,4 +1,20 @@
 @font-face {
+  font-family: "Dosis";
+  font-weight: 300;
+  font-display: swap;
+  src:  url("../fonts/Dosis-light.woff2"),
+  url("../fonts/Dosis-light.woff");
+}
+
+@font-face {
+  font-family: "Dosis";
+  font-weight: 400;
+  font-display: swap;
+  src:  url("../fonts/Dosis-Regular.woff2"),
+  url("../fonts/Dosis-Regular.woff");
+}
+
+@font-face {
   font-family: "Roboto";
   font-weight: 400;
   font-display: swap;
