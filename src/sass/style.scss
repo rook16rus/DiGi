@@ -666,3 +666,77 @@ body {
   @extend %robotocondensed-bold;
   transition: all .5s;
 }
+
+.project {
+  text-align: center;
+  padding: 20px 0 40px;
+  background: linear-gradient(180deg, #2B4074 0%, rgba(43, 64, 116, 0) 100%);
+}
+
+.project__title {
+  color: #fff;
+  margin-bottom: 40px;
+
+  &::after {
+    background-color: #fff;
+  }
+}
+
+.project__item-img {
+  min-height: 250px;
+  border-radius: 4px;
+  background-size: cover;
+  padding: 11px 13px;
+  display: flex;
+
+  &:hover {
+    .project__item-inner {
+      opacity: 1;
+    }
+  }
+
+  &--lalique {
+    background-image: url(../images/project-1.jpg);
+  }
+
+  &--build {
+    background-image: url(../images/project-2.jpg);
+  }
+
+  &--coffee {
+    background-image: url(../images/project-3.jpg);
+  }
+
+  &--tour {
+    background-image: url(../images/project-4.jpg);
+  }
+}
+
+.project__item-inner {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(249, 246, 229, 0.83);;
+  border-radius: 4px;
+  width: 100%;
+  transition: all .5s;
+}
+
+.project__item-info,
+.project__item-search {
+  margin: 0 7px;
+}
+
+.project__item-link {
+  display: block;
+  padding: 20px 0;
+  line-height: 19px;
+  letter-spacing: 2px;
+  color: $accent;
+  @extend %robotocondensed-bold;
+}
+
+.team {
+
+}
