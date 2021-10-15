@@ -911,3 +911,32 @@ body {
     font-size: 18px;
   }
 }
+
+.news {
+  padding: 40px 0;
+  background-color: $bg-color;
+}
+
+.news__title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.news__item {
+  background-color: #fff;
+  border-radius: 4px;
+  margin-bottom: 21px;
+}
+
+.news__item-img {
+  width: 100%;
+}
+
+.news__item-link {
+  display: block;
+  padding: 8px 20px 10px;
+  @extend %robotocondensed-bold;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: $text-color;
+}
