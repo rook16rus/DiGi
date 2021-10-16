@@ -175,14 +175,14 @@ body {
       background-color: transparent;
       border: 1px solid #476E4D;
     }
-  }
 
-  @media (min-width: 640px) {
-    bottom: 50px;
-  }
+    @media (min-width: 640px) {
+      bottom: 50px;
+    }
 
-  @media (min-width: 1024px) {
-    bottom: 80px;
+    @media (min-width: 1024px) {
+      bottom: 80px;
+    }
   }
 }
 
@@ -1084,12 +1084,22 @@ body {
 
 .review {
   padding: 50px 0 95px;
+  color: $text-color;
   text-align: center;
   @extend %robotocondensed-400;
+
+  @media (min-width: 640px) {
+    padding-bottom: 100px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 90px 0 140px;
+  }
 }
 
 .review-slider {
   position: relative;
+
   .slick-dots {
     display: flex;
     justify-content: center;
@@ -1134,6 +1144,18 @@ body {
     background: url("../images/quotes.png") no-repeat center;
     background-size: cover;
   }
+
+  @media (min-width: 640px) {
+    padding-top: 60px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 65px 0 80px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-top: 80px;
+  }
 }
 
 .review-slider__item-text {
@@ -1148,6 +1170,16 @@ body {
 
   @media (max-width: 320px) {
     max-width: 275px;
+  }
+
+  @media (min-width: 640px) {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-bottom: 45px;
   }
 }
 
