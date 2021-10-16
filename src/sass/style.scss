@@ -20,6 +20,10 @@ ul, li {
   list-style: none;
 }
 
+dl {
+  margin: 0;
+}
+
 button {
   padding: 0;
   cursor: pointer;
@@ -1188,4 +1192,75 @@ body {
   font-weight: 700;
   font-size: 20px;
   font-style: normal;
+}
+
+.footer {
+  position: relative;
+  padding: 100px 0 60px;
+  background-color: $accent;
+  color: #fff;
+  text-align: center;
+}
+
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  min-height: 60px;
+  border-radius: 3px;
+  background-color: $accent;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: calc(100% - 30px);
+}
+
+.footer__text {
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  margin: 0 0 43px;
+}
+
+.social-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+.social-list__item {
+  margin-bottom: 15px;
+}
+
+.social-list__item-link {
+  display: block;
+  width: 24px;
+  height: 24px;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.footer-navigation {
+  line-height: 20px;
+
+  a {
+    display: block;
+  }
+}
+
+.footer-navigation__block {
+  margin-bottom: 40px;
+}
+
+.footer-navigation__block-title {
+  @extend %robotocondensed-bold;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 13px;
 }
